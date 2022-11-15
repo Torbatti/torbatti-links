@@ -1,0 +1,11 @@
+---
+const { link , site } = Astro.props;
+var logo_url = `https://s2.googleusercontent.com/s2/favicons?domain=${link}`;
+---
+
+<a href={link} target="_blank" rel="noopener noreferrer">
+    <div class="logo flex justify-between items-center bg-[#F0F3F5] border rounded-md p-0.5">
+        <img src={logo_url} alt="" class="w-5 h-5 ml-1">
+        <p class="text-[#7B2D26] font-bold text-lg mr-1">{site}</p>
+    </div>
+</a>

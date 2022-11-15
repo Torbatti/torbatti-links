@@ -1,0 +1,11 @@
+---
+const {section_title } = Astro.props;
+
+---
+<div class="logo_section mt-5 border-dashed border-2 rounded-lg p-2 m-1 md:p-4">
+    <p class="text-center text-[#7B2D26] text-lg font-bold mb-5 underline underline-offset-2">{section_title}</p>
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+        <slot/>
+    </div>
+    
+</div>
